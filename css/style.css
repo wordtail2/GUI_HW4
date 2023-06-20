@@ -1,0 +1,154 @@
+h1 {
+  color: #ea8a95;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 1px 1px #3e3e3e;
+}
+
+h2 {
+  color: #3e3e3e;
+  font-weight: bold;
+  margin-bottom: -1px;
+  font-variant-caps: petite-caps;
+  font-size: 30px;
+}
+
+/* Paragraph styling for the directions */
+p {
+  margin-bottom: 30px;
+}
+
+label.error {
+  background-color: white;
+  color: #ea8a95;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-style: double;
+  border-color: red;
+  border-width: thick;
+  padding: 1px;
+  font-weight: bolder;
+}
+
+#gap {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Styles the forms */
+#formID fieldset {
+  border: 1px dashed #3e3e3e;
+  margin-bottom: 50px;
+  padding: 20px 20px;
+}
+
+#formID legend {
+  font-weight: bold;
+  color: #ea8a95;
+}
+
+#formID input[type="number"] {
+  margin-right: 20px;
+}
+
+/*button stying*/
+#formID input[type="submit"] {
+  background-color: #3e3e3e;
+  border: 0;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  position: relative;
+  left: 40%;
+  border-radius: 12px;
+}
+
+/* Styles the button when clicked on */
+#formID input[type="submit"]:active {
+  background-color: #000000;
+}
+
+/* Table styling */
+.tContainer {
+  border-collapse: collapse;
+  max-height: 500px;
+  outline: 1px solid #000000;
+  overflow: auto;
+  margin-bottom: 50px;
+  padding: 20px 20px;
+  font-size: 23px;
+  padding-left: 28%;
+}
+
+/* Makes it so that the whole first row is a darker shade to indicate the values the user wants */
+#mtRow:first-child {
+  background-color: #ea8a95;
+  color: white;
+}
+
+/* Makes it so that the whole first column is a darker shade to indicate the values the user wants */
+#mtCellC {
+  background-color: #ea8a95;
+  color: white;
+}
+
+/* Makes every other cell a light pink */
+#mtCellG:nth-child(odd) {
+  background-color: #ffe6ee;
+}
+
+/* SOURCE: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: #ea8a95; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+/* Slider css */
+#sliderMinH {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sliderMaxH {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sliderMinV {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sliderMaxV {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

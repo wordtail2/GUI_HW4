@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+Akshat Thapa, UMass Lowell Computer Science, akshat_thapa@student.uml.edu
+Copyright (c) 2023 by Akshat. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated on 6/13/2023
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HW 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    <h1 class="header-display">Multiplication Table</h1>
+    <p id="direction-text"><h2>Directions:</h2> Please input a number for both minimum and maximum below between the range of -50 to 50.
+      After the submit button is pressed, a table will be generated that will use the numbers entered into the form to create a multiplication table
+      completely dynamically.
+    </p>
+    <form id="formID">
+        <fieldset>
+            <legend>Horizontal (Multiplier)</legend>
+            <label for="multiplierMin">Minimum</label>
+            <input type="number" id="minHorizontal" name="minH" required>
+            <div id="gap"></div>
+            <div id="sliderMinH"></div>
+            <div id="gap"></div>
+
+            <label for="multiplierMax">Maximum</label>
+            <input type="number" id="maxHorizontal" name="maxH" required>
+            <div id="gap"></div>
+            <div id="sliderMaxH"></div>
+            <div id="gap"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vertical (Multiplicand)</legend>
+            <label for="multiplicandMin">Minimum</label>
+            <input type="number" id="minVertical" name="minV" required>
+            <div id="gap"></div>
+            <div id="sliderMinV"></div>
+            <div id="gap"></div>
+
+            <label for="multiplicandMax">Maximum</label>
+            <input type="number" id="maxVertical" name="maxV" required>
+            <div id="gap"></div>
+            <div id="sliderMaxV"></div>
+            <div id="gap"></div>
+        </fieldset>
+
+        <input class="submit"type="submit" value="Submit">
+    </form>
+    <p id=ErrorMessage></p>
+    <p id =ErrorOutput></p>
+    <!-- added jQuery and CDNS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/tableGen.js"></script>
+  </body>
+</html>
